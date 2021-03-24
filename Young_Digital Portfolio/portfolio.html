@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="global.css"/>
+    <link rel="stylesheet" href="transition.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="shortcut icon" type="image/jpg" href="icons/controller.jpg"/>
+    <title>Home - Matthew Young</title>
+    <!--The Internal Styling For This Page-->
+    <style>
+      .container {
+        width: 1100px;
+        height: 550px;
+        background-color: #80cfd5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-top: 50px;
+        flex-direction: row;
+
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        width: 100%;
+        height: 100%;
+      }
+
+      .content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 40px;
+        opacity: 0.3;
+
+      }
+
+      .text {
+        margin-bottom: 20px;
+        font-family: Lexend;
+        font-size: 1.8em;
+        color: white;
+
+      }
+
+      .image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        background-color: white;
+
+      }
+
+      .item-fade:hover {
+        opacity: 1;
+        transition: opacity 0.25s ease-in-out;
+        -moz-transition: opacity 0.25s ease-in-out;
+        -webkit-transition: opacity 0.25s ease-in-out;
+      }
+
+      .image-size {
+        width: 100%;
+        height: 100%;
+      }
+
+      @media(max-width:1173px) {
+
+        .container {
+          height: 100%;
+          width: 80%;
+        }
+
+        .grid {
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          width: 100%;
+          height: 100%;
+        }
+
+        .image {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          background-color: white;
+
+        }
+
+      }
+    </style>
+    <!--The Internal Styling For This Page-->
+  </head>
+  <div class="scrolltopbtn" onclick="scrolltopbtn();"></div>
+
+  <body>
+    <div class="top">
+      <a class="name shadow" href="index.html">Matthew Young</a>
+      <nav>
+        <a class="links shadow" href="index.html">Home</a>
+        <a class="links shadow" href="about.html">About</a>
+        <a class="links shadow" href="contact.html">Contact</a>
+        <a class="links shadow" href="portfolio.html">Portfolio</a>
+      </nav>
+    </div>
+
+    <div id="page-container">
+      <h1 id="title">MY PORTFOLIO</h1>
+      <div id="main-page-content">
+        <div class="container boxshadow">
+          <div class="grid">
+            <div class="content shadow item-fade">
+              <a class="text shadow" href="graphicdesign.html">GRAPHIC DESIGN</a>
+              <a href="graphicdesign.html" class="image-size">
+                <img src="graphic-design/Young_FinalStatePin.png" class="image item-fade" alt="Pin Design"></a>
+            </div>
+            <div class="content shadow item-fade">
+              <a class="text shadow" href="print.html">PRINT</a>
+              <a href="print.html" class="image-size">
+                <img src="print/Young_PopchipsAd.png" class="image item-fade" alt="Popchips Ad"></a>
+            </div>
+            <div class="content shadow item-fade">
+              <a class="text shadow" href="illustration.html">ILLUSTRATION</a>
+              <a href="illustration.html" class="image-size">
+                <img src="illustration/illustration-3.jpg" class="image item-fade" alt="Rick"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer id="footer">Copyright 2020. All Rights Reserved. Matthew Young</footer>
+    </div>
+    <div class="script">
+      <script>
+        window.addEventListener('scroll', function () {
+          var scroll = document.querySelector('.scrolltopbtn');
+          scroll
+            .classList
+            .toggle("active", window.scrollY > 1000)
+        })
+
+        function scrolltopbtn() {
+          window.scrollTo({top: 0})
+        }
+      </script>
+    </div>
+  </body>
+
+</html>

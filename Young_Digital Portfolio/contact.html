@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="global.css"/>
+    <link rel="stylesheet" href="transition.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="shortcut icon" type="image/jpg" href="icons/controller.jpg"/>
+    <title>Contact - Matthew Young</title>
+
+    <!--The Internal Styling For This Page-->
+    <style>
+      #icon-1 {
+
+        animation: headShake;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 1.5s;
+        /* don't forget to set a duration! */
+        animation-iteration-count: infinite;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        align-content: center;
+        width: 1283px;
+        height: 250px;
+        background-color: #80cfd5;
+        color: white;
+      }
+
+      h2 {
+        font-family: Lexend;
+        font-size: 3em;
+        margin: 45px;
+      }
+
+      .icons {
+        height: 150px;
+      }
+
+      .icon-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        height: 170px;
+        width: 170px;
+        margin-top: 50px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 200px;
+      }
+
+      #title {
+        margin-bottom: 50px;
+      }
+
+      @media(max-width:1173px) {
+
+        h2 {
+          font-size: 3.3vw;
+          margin: 25px;
+
+        }
+
+        .grid-images {
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr;
+          width: 80%;
+        }
+
+        .icons {
+          height: 100px;
+        }
+
+        .container {
+          height: 200px;
+          width: 90%;
+          margin-top: 80px;
+        }
+
+        .icon-container {
+          height: 120px;
+          width: 120px;
+        }
+
+      }
+    </style>
+    <!--The Internal Styling For This Page-->
+  </head>
+  <div class="scrolltopbtn" onclick="scrolltopbtn();"></div>
+
+  <body>
+    <div class="top">
+      <a class="name shadow" href="index.html">Matthew Young</a>
+      <nav>
+        <a class="links shadow" href="index.html">Home</a>
+        <a class="links shadow" href="about.html">About</a>
+        <a class="links shadow" href="contact.html">Contact</a>
+        <a class="links shadow" href="portfolio.html">Portfolio</a>
+      </nav>
+    </div>
+    <div id="page-container">
+
+      <div id="main-page-content">
+        <h1 id="title">CONTACT ME</h1>
+        <div class="container boxshadow">
+          <h2>Email: matthewyoung8076380@gmail.com</h2>
+        </div>
+        <div class="icon-container">
+          <a href="mailto:matthewyoung8076380@gmail.com?"><img id="icon-1" class="icons" src="icons/email-icon.png" alt="email-icon"></a>
+        </div>
+
+      </div>
+      <footer id="footer">Copyright 2020. All Rights Reserved. Matthew Young</footer>
+    </div>
+  </body>
+  <div class="script">
+    <script>
+      window.addEventListener('scroll', function () {
+        var scroll = document.querySelector('.scrolltopbtn');
+        scroll
+          .classList
+          .toggle("active", window.scrollY > 1000)
+      })
+
+      function scrolltopbtn() {
+        window.scrollTo({top: 0})
+      }
+    </script>
+  </div>
+
+</html>
