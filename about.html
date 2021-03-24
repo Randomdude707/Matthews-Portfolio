@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="global.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="transition.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="shortcut icon" type="image/jpg" href="icons/controller.jpg"/>
+    <title>About - Matthew Young</title>
+
+    <!--The Internal Styling For This Page-->
+    <style>
+      #photo {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-left: 40px;
+        border: solid 5px white;
+      }
+
+      .image-container {
+        width: 400px;
+        height: 300px;
+
+      }
+
+      .container {
+        width: 1170px;
+        padding:20px;
+        display: flex;
+        margin-top: 50px;
+        justify-content: center;
+        background-color: #6dc3cc;
+        align-items: center;
+
+      }
+
+      .container-2 {
+        width: 1170px;
+        padding:20px;
+        display: flex;
+        margin-top: 170px;
+        justify-content: start;
+        background-color: #6dc3cc;
+        align-items: center;
+        flex-direction: column;
+
+      }
+
+      .bio {
+        width: 720px;
+        display: flex;
+        height: 100%;
+        font-family: Lexend;
+        font-size: 2em;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        align-items: center;
+        justify-content:center
+      }
+
+      .bio-description {
+        text-align: left;
+        
+
+      }
+
+      .box {
+        width: 100%;
+        display: flex;
+        height: 100%;
+        font-family: Lexend;
+        font-size: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 1.5em;
+
+      }
+
+      p {
+        margin: 30px 40px;
+        font-size: 0.6em;
+      }
+
+      .card {
+        width: 1170px;
+        padding: 20px;
+        background-color: #6dc3cc;
+        margin-top: 110px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+      }
+
+      .card-left-icon,
+      .card-right-icon,
+      .left,
+      .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card-title {
+        text-align: center;
+        margin: 20px;
+        font-family: Lexend;
+        font-size: 2.5em;
+      }
+
+      .card-text {
+        font-family: Lexend;
+        text-align: center;
+        font-size: 3em;
+      }
+
+      .icons {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-top: 50px;
+      }
+
+      .icons-philosophy {
+        width: 230px;
+        height: 230px;
+        object-fit: contain;
+        margin-top: 50px;
+        background-color: white;
+      }
+
+      #snow {
+        background-color: white;
+      }
+
+      h3 {
+        margin-top: 20px;
+        font-size: 1.5em;
+        font-family: Lexend;
+      }
+
+      .pdf-container {
+        height: 700px;
+        margin-top: 50px;
+        width: 800px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .pdf-note {
+        width: 500px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8em;
+        text-align: center;
+        color: white;
+      }
+
+      .resume {
+        margin-top: 40px;
+      }
+
+      .download-link {
+        display: flex;
+        justify-content: center;
+        font-family: Lexend;
+        font-size: 0.8em;
+
+      }
+
+      .text-container {
+        color: white;
+      }
+
+      .download-link a {
+        color: white;
+      }
+
+      .download-link:hover {
+        text-decoration: underline;
+      }
+
+      .philosophy {
+        justify-content: flex-start;
+        height: 200px;
+      }
+
+      .philosophy-text {
+        font-size: 1em;
+        text-align: center;
+      }
+
+      #philosophy-container {
+        height: 300px;
+
+      }
+
+      #diffrence-container {
+        height: 300px;
+        margin-bottom: 50px;
+
+      }
+
+      #box5 {
+        height: 900px;
+      }
+
+      .text-align {
+        text-align: center;
+      }
+
+      @media(max-width:1173px) {
+
+        .container {
+          height: 920px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          margin-top: 30px;
+          width: 80%;
+        }
+
+        .container-2 {
+          height: 1200px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          margin-top: 30px;
+          width: 80%;
+        }
+
+        .pdf-container {
+          height: 700px;
+          margin-top: 50px;
+          width: 90%;
+          display: flex;
+          justify-content: center;
+        }
+
+        .pdf-note {
+          width: 80%;
+          margin-top: 50px;
+        }
+
+        .download-link {
+          width: 100%;
+          font-size: 0.6em;
+          margin-top: 50px;
+        }
+
+        .image-container {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 50px;
+        }
+
+        .bio {
+          text-align: justify;
+          width: 400px;
+        }
+
+        h1 {
+          font-size: 1.1em;
+          margin: 30px;
+        }
+
+        #photo {
+          margin-top: 30px;
+          margin-left: 0;
+        }
+
+        #title {
+          margin: 0;
+        }
+
+        .card {
+          grid-template-columns: 1fr;
+          width: 80%;
+          height: 1500px;
+        }
+
+        #philosophy-container {
+          height: 500px;
+        }
+
+        #diffrence-container {
+          height: 700px;
+        }
+
+        #box5 {
+          height: 2000px;
+        }
+
+        #diffrence-title {
+          width: 80vw;
+          margin-bottom: 50px;
+        }
+
+      }
+    </style>
+    <!--The Internal Styling For This Page-->
+  </head>
+  <div class="scrolltopbtn" onclick="scrolltopbtn();"></div>
+
+  <body>
+    <div class="top">
+      <a class="name shadow" href="index.html">Matthew Young</a>
+      <nav>
+        <a class="links shadow" href="index.html">Home</a>
+        <a class="links shadow" href="about.html">About</a>
+        <a class="links shadow" href="contact.html">Contact</a>
+        <a class="links shadow" href="portfolio.html">Portfolio</a>
+      </nav>
+    </div>
+    <div id="page-container">
+
+      <div id="main-page-content">
+        <h1 id="title">ABOUT ME</h1>
+        <div class="container boxshadow">
+          <div class="image-container">
+            <img id="photo" src="aboutfiles/me-1.jpg">
+          </div>
+
+          <div class="bio">
+            <div class="bio-title">
+              <h1>Hello, I'm Matthew</h1>
+            </div>
+            <div class="bio-description">
+              <p>Welcome to my Portfolio, I am a Graphic Designer who is proficient in Photoshop, Illustrator, and Indesign. Recently I have been introduced to the World of Web Design which has opened up a ton of new fun and interesting challenges for me. I happen to enjoy Web Design because unlike Photoshop, Illustrator, and Indesign. Web Design offers new problems and things I have to take into consideration when designing which is what I love about it. I really hope you enjoy my work and if you want anything done feel free to contact me.
+              </p>
+            </div>
+
+          </div>
+        </div>
+        <div class="container-2 boxshadow" data-aos="fade-up" data-aos-duration="500">
+          <div class="box">
+            <div class="text-container" class="resume">
+              <h1>RESUME</h1>
+            </div>
+            <div class="pdf-container">
+              <iframe src="aboutfiles/MatthewYoung'sResume.pdf" frameborder="0" scrolling="auto" height="100%" width="100%"></iframe>
+            </div>
+            <div class="pdf-note">
+              <p>
+                Note: After Clicking Download Desktop Safari and Firefox Users Have To Navigate To The Top Of The Screen And Find The File > Save As (or ⌘S) Command To Download
+              </p>
+            </div>
+            <div class="download-link">
+              <a href="aboutfiles/MatthewYoung'sResume.pdf" target="_blank" download="Matthew Young's Resume">Download Matthew Young's Resume</a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="card boxshadow" data-aos="fade-up" data-aos-duration="500">
+          <div class="left">
+            <div class="card-title">
+              <h2>LIKES</h2>
+            </div>
+            <div class="card-left-icon">
+              <img class="icons" src="icons/pizza.png" alt="Pizza" data-aos="fade-right" data-aos-duration="500">
+              <h3>Pizza</h3>
+              <img class="icons" src="icons/controller.jpg" alt="Controller" data-aos="fade-right" data-aos-duration="500">
+              <h3>Gaming</h3>
+              <img class="icons" src="icons/Flag_of_Japan.jpg" alt="Japan" data-aos="fade-right" data-aos-duration="500">
+              <h3>Japan</h3>
+            </div>
+          </div>
+          <div class="right">
+            <div class="card-title">
+              <h2>DISLIKES</h2>
+            </div>
+            <div class="card-right-icon">
+              <img class="icons" src="icons/snowflake-vector-png-10.png" alt="Snowflake" id="snow" data-aos="fade-right" data-aos-duration="500">
+              <h3>The Cold</h3>
+            </div>
+          </div>
+
+        </div>
+        <div class="container-2 boxshadow" id="philosophy-container" data-aos="fade-up" data-aos-duration="500">
+          <div class="box" class="philosophy">
+            <div class="text-container" class="resume">
+              <h1 id="philosophy-title">My Philosophy</h1>
+              <p class="philosophy-text">Is that you can do anything in life given that you put enough time and effort into it, let me show you what I mean.</p>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="card boxshadow" id="box5" data-aos="fade-up" data-aos-duration="500">
+          <div class="left">
+            <div class="card-title">
+              <h2>Before</h2>
+            </div>
+            <div class="card-left-icon">
+              <img class="icons-philosophy" src="graphic-design/Young_2020_StatePin.png" alt="Pin Before" data-aos="fade-right" data-aos-duration="500">
+              <h3>Skills USA 2020 Pin Design</h3>
+              <img class="icons-philosophy" src="graphic-design/NewT-ShirtDesign.png" alt="T-Shirt Before" data-aos="fade-right" data-aos-duration="500">
+              <h3 class="text-align">Skills USA 2020 Concept T-Shirt Design</h3>
+            </div>
+          </div>
+          <div class="right">
+            <div class="card-title">
+              <h2>After</h2>
+            </div>
+            <div class="card-right-icon">
+              <img class="icons-philosophy" src="graphic-design/Young_FinalStatePin.png" alt="Pin After" id="snow" data-aos="fade-right" data-aos-duration="500">
+              <h3 class="text-align">Final Skills USA 2021 Pin Design</h3>
+              <img class="icons-philosophy" src="graphic-design/Young_1stPlaceLocalContest2020SkillsUSAT-ShirtDesign.png" alt="T-Shirt After" id="snow" data-aos="fade-right" data-aos-duration="500">
+              <h3 class="text-align">Final Skills USA 2020 T-Shirt Design</h3>
+            </div>
+          </div>
+
+        </div>
+        <div class="container-2 boxshadow" id="diffrence-container" data-aos="fade-up" data-aos-duration="500">
+          <div class="box" class="philosophy">
+            <div class="text-container" class="resume">
+              <h1 id="diffrence-title">Do you see the diffrence in quality ?</h1>
+              <p class="philosophy-text">My point is that when you learn to do anything in life, at the beginning it's going to be tough but if your determined and persistent you will produce amazing results.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <footer id="footer">Copyright 2020. All Rights Reserved. Matthew Young</footer>
+      </div>
+      <div class="script">
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+        <script>
+          window.addEventListener('scroll', function () {
+            var scroll = document.querySelector('.scrolltopbtn');
+            scroll
+              .classList
+              .toggle("active", window.scrollY > 1000)
+          })
+
+          function scrolltopbtn() {
+            window.scrollTo({top: 0})
+          }
+        </script>
+      </div>
+    </body>
+
+  </html>
